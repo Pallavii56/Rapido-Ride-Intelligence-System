@@ -1,81 +1,88 @@
-Rapido Ride Intelligence System
-End-to-End Data Analytics Project using Python | SQL | Power BI
+# 🚖 Rapido Ride Intelligence System
 
-## 📌 Project Overview
+> End-to-End Data Analytics Project using **Python, MySQL & Power BI**
 
-The **Rapido Ride Intelligence System** is an end-to-end Data Analytics project that analyzes Rapido ride data to uncover business insights related to ride demand, revenue, customer behavior, ride performance, and operational efficiency.
-
-The project demonstrates the complete analytics workflow, starting from raw data cleaning in Python to SQL database management and interactive Power BI dashboards.
-
----
-
-# 🎯 Project Objectives
-
-- Clean and preprocess raw ride data.
-- Handle missing values and duplicate records.
-- Perform feature engineering for business analysis.
-- Store processed data in a MySQL database.
-- Write SQL business queries for analysis.
-- Build interactive Power BI dashboards.
-- Generate actionable business insights.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue?logo=mysql)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?logo=pandas)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-# 📊 Dataset Information
+# 📌 Project Overview
 
-**Dataset Name:** Bangalore Rapido Ride Services Dataset
+The **Rapido Ride Intelligence System** is an end-to-end Business Intelligence project developed to analyze ride-booking operations and generate actionable business insights.
 
-**Source:** Kaggle
+The project covers the complete analytics pipeline:
 
-**Records:** 50,000
+- Data Cleaning
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- SQL Database Design
+- Business Query Analysis
+- Interactive Power BI Dashboards
 
-**Original Columns:** 13
+The objective is to transform raw ride data into meaningful insights that support business decision-making.
 
-**Feature Engineered Columns:** 35
+---
+
+# 🎯 Business Objectives
+
+This project helps answer questions such as:
+
+- Which ride service generates the highest revenue?
+- Which payment method is most preferred?
+- What are the peak booking hours?
+- Which pickup and drop locations are busiest?
+- Which rides generate the highest revenue?
+- What factors influence ride cancellations?
+- How does customer behaviour change over time?
+
+---
+
+# 📂 Dataset Information
+
+**Dataset:** Bangalore Rapido Ride Services Dataset
+
+### Dataset Size
+
+| Item | Value |
+|------|-------|
+| Total Records | 50,000 |
+| Total Features | 35 |
+| Missing Values | 0 |
+| Duplicate Records | Removed |
+| Feature Engineered Columns | 22+ |
 
 ---
 
 # 🛠️ Tech Stack
 
-## Programming
-
-- Python 3.10
-
-## Python Libraries
-
+- Python
 - Pandas
 - NumPy
+- Missingno
 - Matplotlib
 - Seaborn
-- Plotly
-- SciPy
-
-## Database
-
+- OpenPyXL
 - MySQL
-
-## Visualization
-
-- Power BI Desktop
-
-## Development Tools
-
+- Power BI
+- Git
+- GitHub
 - VS Code
-- MySQL Workbench
 
 ---
 
-# 📂 Project Structure
+# 📁 Project Structure
 
-```text
-Rapido Ride Intelligence System
+```
+Rapido-Ride-Intelligence-System
 │
 ├── Dataset
-│   ├── rapido_raw.csv
+│   ├── Raw
 │   ├── Cleaned
-│   │      cleaned_rides.csv
 │   └── Feature_Engineered
-│          feature_engineered_rides.csv
 │
 ├── Python
 │   ├── cleaning.py
@@ -95,257 +102,222 @@ Rapido Ride Intelligence System
 │   └── Rapido Dashboard.pbix
 │
 ├── Images
-│   ├── dashboard1.png
-│   ├── dashboard2.png
-│   ├── dashboard3.png
-│   └── dashboard4.png
+│   ├── logo.png
+│   └── EDA_Charts
 │
 ├── Report
-│   └── Project_Report.pdf
 │
 ├── requirements.txt
-│
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-# ⚙️ Python Workflow
+# ⚙️ Project Workflow
 
-### Data Cleaning
+```
+Raw Dataset
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Exploratory Data Analysis
+      │
+      ▼
+SQL Database
+      │
+      ▼
+Business Queries
+      │
+      ▼
+Power BI Dashboards
+      │
+      ▼
+Business Insights
+```
 
-- Removed duplicate records
-- Standardized column names
-- Converted date and time columns
-- Handled missing values
-- Corrected data types
+---
 
-### Feature Engineering
+# 🔍 Feature Engineering
 
-Created business-ready features including:
+Created additional business features including:
 
 - Year
 - Month
 - Quarter
-- Week Number
-- Day
 - Weekday
+- Week Number
 - Hour
-- Time of Day
+- Time Of Day
 - Peak Hour
-- Weekend Indicator
 - Ride Revenue
-- Fare per KM
+- Fare Per KM
 - Average Speed
-- High Value Ride
-- Completed Flag
-- Cancelled Flag
 - Distance Category
 - Duration Category
 - Fare Category
-
-### Exploratory Data Analysis (EDA)
-
-- KPI Analysis
-- Statistical Summary
-- Revenue Analysis
-- Ride Trends
-- Service Distribution
-- Payment Analysis
-- Distance Analysis
-- Ride Duration Analysis
+- Weekend Indicator
+- High Value Ride
+- Completed Ride
+- Cancelled Ride
 
 ---
 
-# 🗄️ SQL Workflow
+# 📊 Power BI Dashboards
+# 📷 Dashboard Preview
 
-The cleaned and feature-engineered dataset was imported into MySQL.
+## 🚖 Dashboard 1 — Executive Summary
 
-The SQL layer includes:
-
-- Database Creation
-- Table Creation
-- Data Import
-- Business Queries
-- KPI Calculations
-- Revenue Analysis
-- Ride Analysis
+![Dashboard 1](Images/Dashboard_Screenshots/dashboard1_executive_summary.png)
 
 ---
 
-# 📈 Power BI Dashboards
+## 📊 Dashboard 2 — Executive Analytics
 
-## Dashboard 1 — Executive Summary
-
-- Total Rides
-- Total Revenue
-- Average Fare
-- Average Distance
-- Ride Status
-- Revenue Trend
-- Service Distribution
+![Dashboard 2](Images/Dashboard_Screenshots/dashboard2_executive_analytics.png)
 
 ---
 
-## Dashboard 2 — Executive Analytics
+## ⚙ Dashboard 3 — Operations Dashboard
 
-- Monthly Revenue Trend
-- Revenue by Service
-- Peak Hour Analysis
-- Payment Distribution
-- Top Pickup Locations
-- Top Drop Locations
+![Dashboard 3](Images/Dashboard_Screenshots/dashboard3_operations.png)
 
 ---
 
-## Dashboard 3 — Operations Dashboard
+## 💰 Dashboard 4 — Customer & Revenue Insights
 
-- Hourly Ride Trend
-- Ride Status by Service
-- Weekend vs Weekday Analysis
-- Distance Categories
-- Duration Categories
-- Cancellation Analysis
-- Service Performance
+![Dashboard 4](Images/Dashboard_Screenshots/dashboard4_customer_revenue.png)
 
 ---
 
-## Dashboard 4 — Customer & Revenue Insights
+# 📈 EDA Reports Generated
 
-- Revenue by Service
-- Revenue vs Ride Count
-- Monthly Revenue
-- Payment Method Revenue
-- Revenue by Distance Category
-- High Value Ride Analysis
-- Top Revenue Pickup Locations
-- Top Revenue Drop Locations
-- Fare Distribution
-- Decomposition Tree
+The project automatically generates:
 
----
-
-# 📊 Key Business Insights
-
-- Bike services accounted for the highest ride volume.
-- Completed rides significantly outnumbered cancelled rides.
-- Digital payment methods were the most frequently used.
-- Revenue varied across different service types.
-- Ride demand peaked during office commuting hours.
-- Certain pickup and drop locations consistently generated higher revenue.
+- KPI Report
+- Missing Value Report
+- Correlation Matrix
+- Outlier Report
+- Numeric Summary
+- Duplicate Report
+- Descriptive Statistics
+- Final Project Report
 
 ---
 
-# 📸 Dashboard Preview
+# 📌 Key Business Insights
 
-## Dashboard 1 – Executive Summary
-
-*(Insert Screenshot Here)*
-
----
-
-## Dashboard 2 – Executive Analytics
-
-*(Insert Screenshot Here)*
+- Bike rides generated the highest revenue.
+- Digital payment methods dominate ride transactions.
+- Evening hours show the highest ride demand.
+- High-value rides contribute significantly to total revenue.
+- Ride demand varies by service type and time of day.
+- A small number of pickup and drop locations account for a large share of rides.
 
 ---
 
-## Dashboard 3 – Operations Dashboard
+# 🚀 How to Run
 
-*(Insert Screenshot Here)*
-
----
-
-## Dashboard 4 – Customer & Revenue Insights
-
-*(Insert Screenshot Here)*
-
----
-
-# 🚀 How to Run the Project
-
-### 1. Clone the repository
+Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Rapido-Ride-Intelligence-System.git
+git clone https://github.com/Pallavii56/Rapido-Ride-Intelligence-System.git
 ```
 
-### 2. Install required libraries
+Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install -r Python/requirements.txt
 ```
 
-### 3. Run Python scripts
+Run the pipeline
 
 ```bash
-python cleaning.py
-
-python feature_engineering.py
-
-python eda.py
+python Python/cleaning.py
+python Python/feature_engineering.py
+python Python/eda.py
 ```
 
-### 4. Execute SQL scripts
-
-Run the following files in MySQL Workbench:
-
-- create_tables.sql
-- insert_data.sql
-- business_queries.sql
-
-### 5. Open Power BI
-
-Open:
+Execute SQL scripts
 
 ```
-Rapido Dashboard.pbix
+create_tables.sql
+
+insert_data.sql
+
+business_queries.sql
 ```
 
-Refresh the data if required.
+Open
+
+```
+PowerBI/Rapido Dashboard.pbix
+```
 
 ---
 
-# 💼 Skills Demonstrated
+# 📷 Dashboard Preview
+
+> Add screenshots here.
+
+Example:
+
+```
+Images/dashboard1.png
+
+Images/dashboard2.png
+
+Images/dashboard3.png
+
+Images/dashboard4.png
+```
+
+---
+
+# 📚 Skills Demonstrated
 
 - Data Cleaning
-- Data Preprocessing
+- Data Transformation
 - Feature Engineering
 - Exploratory Data Analysis
+- Statistical Analysis
 - SQL Query Writing
 - Database Design
-- Data Visualization
-- Dashboard Design
 - Business Intelligence
-- KPI Development
-- Data Storytelling
+- Dashboard Design
+- Data Visualization
+- Git & GitHub
+- Documentation
 
 ---
 
-# 🔮 Future Enhancements
+# 🔮 Future Improvements
 
-- Real-time ride monitoring
-- Predictive demand forecasting
-- Customer segmentation
-- Driver performance analytics
-- Geographic route analysis
-- Machine learning-based fare prediction
+- Add real-time dashboard refresh
+- Connect Power BI directly with MySQL
+- Deploy dashboards to Power BI Service
+- Build predictive analytics models
+- Add customer segmentation analysis
 
 ---
 
 # 👩‍💻 Author
 
-**Naina**
+**Pallavi Mohapatra**
 
-### Technologies Used
+Aspiring Data Analyst | Python | SQL | Power BI
 
-- Python
-- Pandas
-- NumPy
-- MySQL
-- Power BI
-- VS Code
+GitHub:
+https://github.com/Pallavii56
+
+LinkedIn:
+www.linkedin.com/in/pallavi-mohapatra-ml
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+⭐ If you found this project useful, consider giving it a star.
