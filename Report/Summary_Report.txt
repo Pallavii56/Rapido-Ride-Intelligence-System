@@ -1,0 +1,95 @@
+============================================================
+RAPIDO DATASET SUMMARY
+============================================================
+
+Rows : 50000
+Columns : 35
+
+Missing Values
+services             0
+date                 0
+time                 0
+ride_status          0
+source               0
+destination          0
+duration             0
+ride_id              0
+distance             0
+ride_charge          0
+misc_charge          0
+total_fare           0
+payment_method       0
+Year                 0
+Month                0
+Month_Number         0
+Quarter              0
+Day                  0
+Weekday              0
+Week_Number          0
+Hour                 0
+Minute               0
+Second               0
+Time_Of_Day          0
+Peak_Hour            0
+Is_Weekend           0
+Ride_Revenue         0
+Distance_Category    0
+Duration_Category    0
+Fare_Category        0
+Fare_Per_KM          0
+Average_Speed        0
+High_Value_Ride      0
+Cancelled            0
+Completed            0
+dtype: int64
+
+Data Types
+services              object
+date                  object
+time                  object
+ride_status           object
+source                object
+destination           object
+duration               int64
+ride_id               object
+distance             float64
+ride_charge          float64
+misc_charge          float64
+total_fare           float64
+payment_method        object
+Year                   int64
+Month                 object
+Month_Number           int64
+Quarter                int64
+Day                    int64
+Weekday               object
+Week_Number            int64
+Hour                   int64
+Minute                 int64
+Second                 int64
+Time_Of_Day           object
+Peak_Hour             object
+Is_Weekend              bool
+Ride_Revenue         float64
+Distance_Category     object
+Duration_Category     object
+Fare_Category         object
+Fare_Per_KM          float64
+Average_Speed        float64
+High_Value_Ride         bool
+Cancelled               bool
+Completed               bool
+dtype: object
+
+Statistical Summary
+           duration      distance   ride_charge   misc_charge  ...        Second  Ride_Revenue   Fare_Per_KM  Average_Speed
+count  50000.000000  50000.000000  50000.000000  50000.000000  ...  50000.000000  50000.000000  50000.000000   50000.000000
+mean      64.320100     25.528243    522.187197     24.974936  ...     29.520040    547.144003     43.745791      35.310041
+std       31.852336     14.177136    260.524433     13.711941  ...     17.354153    260.874212     73.616303      38.015014
+min       10.000000      1.000000     50.030000      0.000000  ...      0.000000     50.580000      1.190000       0.540000
+25%       37.000000     13.260000    309.957500     13.790000  ...     14.000000    334.767500     12.490000      12.440000
+50%       64.000000     25.460000    520.030000     25.070000  ...     29.000000    544.920000     21.480000      23.850000
+75%       92.000000     37.860000    733.267500     36.060000  ...     45.000000    758.415000     41.472500      41.970000
+max      119.000000     50.000000    999.960000     50.000000  ...     59.000000   1048.800000    995.800000     299.820000
+
+[8 rows x 16 columns]
