@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+<<<<<<< HEAD
 
 # Virtual Environment
 venv/
@@ -11,10 +12,18 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
+=======
+*.log
+
+# Virtual Environment
+venv/
+.env/
+>>>>>>> 270872a5a519c3e1c1912f335e44cf3fac07cc73
 
 # VS Code
 .vscode/
 
+<<<<<<< HEAD
 # Power BI cache
 *.pbix.autosave
 *.pbix.lock
@@ -34,3 +43,18 @@ Thumbs.db
 
 # Environment variables
 .env
+=======
+# Jupyter
+.ipynb_checkpoints/
+
+# Power BI Cache
+*.pbix.autosave
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+>>>>>>> 270872a5a519c3e1c1912f335e44cf3fac07cc73
