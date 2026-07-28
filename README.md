@@ -1,4 +1,5 @@
-# 🚖 Rapido Ride Intelligence System
+Rapido Ride Intelligence System
+End-to-End Data Analytics Project using Python | SQL | Power BI
 
 ## 📌 Project Overview
 
